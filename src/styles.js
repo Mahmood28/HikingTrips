@@ -16,6 +16,7 @@ export const ChangeUnit = styled.div`
   margin: 1.25em;
   padding: 0.25em 1em;
   border-radius: 3px;
+  
 `;
 export const Difficulty= styled.div`
 font-size: 1em;
@@ -25,8 +26,11 @@ border-radius: 3px;
 `;
 export const ListWrapper = styled.div`
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   display: flex;
+
+  flex-wrap: wrap;
+ 
 `;
 
 export const ItemWrapper = styled.div`

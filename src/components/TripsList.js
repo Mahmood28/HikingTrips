@@ -34,16 +34,16 @@ function TripsList() {
     return (
         <div>
             <SearchBar setQuery={setQuery} />  
-            <Container>
+            <Container fluid>
              <Row >   
-      <Col md={4}> <ChangeUnit>
+      <Col md={3}> <ChangeUnit>
               <h2>Filter List:</h2>
               <br></br>
           <ProgressBar setValue={setValue} value={value} currentUnit={currentUnit} />
               <button type="button" className="btn btn-primary" onClick={toggleUnit}>Change Unit</button>
           </ChangeUnit>
      <Difficulty><DropDown /></Difficulty> </Col>
-        <Col md={8}>
+        <Col md={9}>
       
        <ListWrapper> {trips} </ListWrapper>                
       </Col>
