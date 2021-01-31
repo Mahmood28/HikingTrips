@@ -4,12 +4,12 @@ import { Link } from "react-router-dom";
 function Trip(props) {
   return (
     <ItemWrapper>
-      <Link to={`/trips/${props.trip.slug}`}>
+      <Link to={`/trips/name/${props.trip.slug}`}>
         <img src={props.trip.image} alt={props.trip.name} />
       </Link>
-      <p>{props.trip.name}</p>
+      <p className="tripname">{props.trip.name}</p>
       <p>
-        Trip Length
+         Trip Length: {' '}
         {props.currentUnit === "KM"
           ? props.trip.length
           : props.trip.length / 1.6}

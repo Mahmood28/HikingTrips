@@ -1,24 +1,20 @@
 import DropdownButton from "react-bootstrap/DropdownButton";
 import Dropdown from "react-bootstrap/Dropdown";
 
-const DropDown = (props) => {
-  const handleSelect = (e) => {
-    console.log(e);
-    props.setDifficulty(e);
-  };
+const DropDown = () => {
+ 
   return (
     <DropdownButton
-      onSelect={handleSelect}
       id="dropdown-basic-button"
       title="Difficulty"
     >
-      <Dropdown.Item eventKey="easy" href="#/easy">
+      <Dropdown.Item  href="/trips/easy">
         Easy
       </Dropdown.Item>
-      <Dropdown.Item eventKey="medium" href="#/medium">
+      <Dropdown.Item  href="/trips/medium">
         Medium
       </Dropdown.Item>
-      <Dropdown.Item eventKey="hard" href="#/hard">
+      <Dropdown.Item href="/trips/hard">
         Hard
       </Dropdown.Item>
     </DropdownButton>
