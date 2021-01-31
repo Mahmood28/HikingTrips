@@ -5,19 +5,18 @@ import SearchBar from "./SearchBar";
 import { useState } from "react";
 import { ListWrapper } from "../styles";
 import DropDown from "./DropDown";
-import { useParams } from "react-router-dom";
 
 function TripsList() {
   const [query, setQuery] = useState("");
   const [value, setValue] = useState(100);
-  const [difficulty, setDifficulty] = useState("");
+  const [difficulty, setDifficulty] = useState(null);
   const [currentUnit, setCurrentUnit] = useState("KM");
   const trips = data
     .filter(
       (trip) =>
         trip.name.toLocaleLowerCase().includes(query.toLowerCase()) &&
         trip.length < value &&
-        trip.difficulty === difficulty
+        (difficulty ? trip.difficulty === difficulty : true)
     )
     .map((trip) => <Trip trip={trip} currentUnit={currentUnit} />);
   const toggleUnit = () => {
