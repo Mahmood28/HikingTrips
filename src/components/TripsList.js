@@ -13,7 +13,6 @@ import Col from "react-bootstrap/Col";
 
 function TripsList() {
   const max = Math.max(...data.map((trip) => trip.length));
-  console.log(max);
   const { tripdiff } = useParams();
   const [query, setQuery] = useState("");
   const [value, setValue] = useState(max);
@@ -36,9 +35,9 @@ function TripsList() {
   return (
     <div>
       <SearchBar setQuery={setQuery} />
-      <Container>
+      <Container fluid>
         <Row>
-          <Col md={4}>
+          <Col md={3}>
             {" "}
             <ChangeUnit>
               <h2>Filter List:</h2>
@@ -48,7 +47,6 @@ function TripsList() {
                 value={value}
                 currentUnit={currentUnit}
                 max={max}
-                currentUnit={currentUnit}
               />
               <button
                 type="button"
@@ -60,9 +58,9 @@ function TripsList() {
             </ChangeUnit>
             <Difficulty>
               <DropDown />
-            </Difficulty>
+            </Difficulty>{" "}
           </Col>
-          <Col md={8}>
+          <Col md={9}>
             <ListWrapper> {trips} </ListWrapper>
           </Col>
         </Row>

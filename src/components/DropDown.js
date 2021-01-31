@@ -8,6 +8,9 @@ const DropDown = () => {
       id="dropdown-basic-button"
       title="Difficulty"
     >
+       <Dropdown.Item  href="/trips">
+        None
+      </Dropdown.Item>
       <Dropdown.Item  href="/trips/easy">
         Easy
       </Dropdown.Item>

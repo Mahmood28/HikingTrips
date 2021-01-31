@@ -25,8 +25,9 @@ export const Difficulty = styled.div`
 `;
 export const ListWrapper = styled.div`
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   display: flex;
+
   flex-wrap: wrap;
 `;
 
