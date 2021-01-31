@@ -17,16 +17,17 @@ export const ChangeUnit = styled.div`
   padding: 0.25em 1em;
   border-radius: 3px;
 `;
-export const Difficulty= styled.div`
-font-size: 1em;
-margin: 1.25em;
-padding: 0.25em 1em;
-border-radius: 3px;
+export const Difficulty = styled.div`
+  font-size: 1em;
+  margin: 1.25em;
+  padding: 0.25em 1em;
+  border-radius: 3px;
 `;
 export const ListWrapper = styled.div`
   align-items: center;
   justify-content: center;
   display: flex;
+  flex-wrap: wrap;
 `;
 
 export const ItemWrapper = styled.div`
@@ -44,15 +45,19 @@ export const ItemWrapper = styled.div`
 `;
 
 export const DetailWrapper = styled.div`
-  display: block;
+  align-items: center;
+  justify-content: center;
   margin-left: auto;
   margin-right: auto;
+  margin: auto;
   width: 80%;
   img {
     width: 40%;
-    float: left;
   }
   p {
     vertical-align: middle;
+  }
+  &.row {
+    text-align: center;
   }
 `;

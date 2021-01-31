@@ -9,7 +9,7 @@ function Trip(props) {
       </Link>
       <p className="tripname">{props.trip.name}</p>
       <p>
-         Trip Length: {' '}
+        Trip Length:{" "}
         {props.currentUnit === "KM"
           ? props.trip.length
           : props.trip.length / 1.6}
