@@ -27,3 +27,5 @@ const data = [
     rating: 3,
   },
 ];
+
+export default data;
