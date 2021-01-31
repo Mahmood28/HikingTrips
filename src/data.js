@@ -29,6 +29,16 @@ const data = [
     length: 20,
     rating: 3,
   },
+  {
+    name: "Walking in Dubai",
+    slug: "dubai",
+    image:
+      "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.nakedmadrid.com%2Fwp-content%2Fuploads%2F2014%2F11%2FHiking-Madrid.jpg",
+    city: "Dubai",
+    difficulty: "medium",
+    length: 8,
+    rating: 4,
+  }
 ];
 
 export default data;
