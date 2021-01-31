@@ -1,12 +1,11 @@
-
+import { ItemWrapper } from "../styles";
 function Trip(props) {
-  
-    return (
-        <div>
-        <img src={props.trip.image} alt="trip image" />
-            <p>{props.trip.name}</p>
-         </div>
-    );
+  return (
+    <ItemWrapper>
+      <img src={props.trip.image} alt="trip image" />
+      <p>{props.trip.name}</p>
+    </ItemWrapper>
+  );
 }
 
 export default Trip;
