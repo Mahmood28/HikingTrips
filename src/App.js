@@ -7,12 +7,12 @@ function App() {
   return (
     <div className="App">
       <Switch>
-        <Route exact path="/">
-          <h1>Hiking Trips</h1>
-          <TripsList />
-        </Route>
         <Route path="/trips/:tripSlug">
           <TripDetails trips={data} />
+        </Route>
+        <Route path="/trips/">
+          <h1>Hiking Trips</h1>
+          <TripsList />
         </Route>
       </Switch>
     </div>
