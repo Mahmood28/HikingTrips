@@ -1,7 +1,6 @@
-import { DetailWrapper } from "../styles";
 import { useParams } from "react-router-dom";
 import Trip from "./Trip";
-import { ListWrapper } from "../styles";
+import { DetailWrapper, RecommendedWrapper } from "../styles";
 const TripDetails = (props) => {
   const trips = props.trips;
   const { tripSlug } = useParams();
@@ -42,7 +41,7 @@ const TripDetails = (props) => {
       <div className="row">
         <p>Recommended Trips:</p>
         <div className="row">
-          <ListWrapper>{recommendtrips}</ListWrapper>
+          <RecommendedWrapper>{recommendtrips}</RecommendedWrapper>
         </div>
       </div>
     </div>

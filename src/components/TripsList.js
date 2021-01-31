@@ -3,15 +3,14 @@ import Trip from "./Trip";
 import ProgressBar from "./ProgressBar";
 import SearchBar from "./SearchBar";
 import { useState } from "react";
-import { ListWrapper } from "../styles";
 import DropDown from "./DropDown";
 import { useParams } from "react-router-dom";
-import { ChangeUnit, Difficulty } from "../styles";
+import { ChangeUnit, Difficulty, ListWrapper } from "../styles";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
-function TripsList() {
+const TripsList = () => {
   const max = Math.max(...data.map((trip) => trip.length));
   const { tripdiff } = useParams();
   const [query, setQuery] = useState("");
@@ -67,6 +66,6 @@ function TripsList() {
       </Container>
     </div>
   );
-}
+};
 
 export default TripsList;

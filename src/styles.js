@@ -31,6 +31,8 @@ export const ListWrapper = styled.div`
   flex-wrap: wrap;
 `;
 
+export const RecommendedWrapper = styled(ListWrapper)``;
+
 export const ItemWrapper = styled.div`
   margin: 20px;
   img {

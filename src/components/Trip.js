@@ -1,7 +1,7 @@
 import { ItemWrapper } from "../styles";
 import { Link } from "react-router-dom";
 
-function Trip(props) {
+const Trip = (props) => {
   return (
     <ItemWrapper>
       <Link to={`/trips/name/${props.trip.slug}`}>
@@ -17,6 +17,6 @@ function Trip(props) {
       </p>
     </ItemWrapper>
   );
-}
+};
 
 export default Trip;

@@ -36,11 +36,13 @@ const data = [
   },
   {
     name: "Walking in Paris",
-    slug: "Paris",
+    slug: "walking-in-paris",
     image:
       "https://images.unsplash.com/photo-1431274172761-fca41d930114?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
     city: "Paris",
-    difficulty: "hard",
+    difficulty: "easy",
+    length: 10,
+    rating: 3,
   },
   {
     name: "Everst Base Camp Short Trek",
@@ -61,8 +63,8 @@ const data = [
     rating: 5,
   },
   {
-    name: "Walking in Bahrain",
-    slug: "bahrain",
+    name: "Guided Bahrain Hike",
+    slug: "guided-bahrain-hike",
     image: "https://img.ev.mu/images/attractions/4330/960x640/1319.jpg",
     city: "Manama",
     difficulty: "easy",
@@ -115,8 +117,8 @@ const data = [
     rating: 2,
   },
   {
-    name: "Walking in Dubai",
-    slug: "dubai",
+    name: "Summer in Dubai",
+    slug: "summer-in-dubai",
     image:
       "https://images.unsplash.com/photo-1509710673830-ba94a3ba1b82?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1352&q=80",
     city: "Dubai",
